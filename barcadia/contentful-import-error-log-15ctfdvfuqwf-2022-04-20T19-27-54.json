@@ -1,0 +1,3932 @@
+[
+  {
+    "ts": "2022-04-20T23:27:38.130Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "jou8fvkfe5pw"
+            }
+          },
+          "id": "post",
+          "type": "ContentType",
+          "createdAt": "2021-12-17T15:26:18.343Z",
+          "updatedAt": "2021-12-27T16:19:41.787Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "publishedAt": "2021-12-27T16:19:41.787Z",
+          "firstPublishedAt": "2021-12-17T15:26:18.656Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1ZkS53idWXmyWeA3nvkU95"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1ZkS53idWXmyWeA3nvkU95"
+            }
+          },
+          "publishedCounter": 2,
+          "version": 4,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1ZkS53idWXmyWeA3nvkU95"
+            }
+          }
+        },
+        "displayField": "title",
+        "name": "Post",
+        "description": "",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "introduction",
+            "name": "Introduction",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "url",
+            "name": "url",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "content",
+            "name": "Content",
+            "type": "RichText",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "enabledMarks": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "code"
+                ],
+                "message": "Only bold, italic, underline, and code marks are allowed"
+              },
+              {
+                "enabledNodeTypes": [
+                  "heading-2",
+                  "heading-3",
+                  "heading-4",
+                  "heading-5",
+                  "heading-6",
+                  "ordered-list",
+                  "unordered-list",
+                  "hr",
+                  "blockquote",
+                  "entry-hyperlink",
+                  "hyperlink"
+                ],
+                "message": "Only heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, link to entry, and link to Url nodes are allowed"
+              },
+              {
+                "nodes": {
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "post"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "15ctfdvfuqwf"
+                }
+              },
+              "id": "post",
+              "type": "ContentType",
+              "createdAt": "2022-04-20T17:38:09.613Z",
+              "updatedAt": "2022-04-20T17:38:09.613Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "ed9952aa-dd20-4748-8557-385a8a43008f"
+                }
+              },
+              "revision": 1
+            },
+            "displayField": "q5No7KEnhKVnPwYG",
+            "name": "Post",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "q5No7KEnhKVnPwYG",
+                "apiName": "post",
+                "name": "Post",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/15ctfdvfuqwf/environments/master/content_types/post",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v12.22.11; os Windows/v12.22.11;",
+            "CF-Sequence": "aeea435d-d01d-4cb4-b7fa-ed3801ca608d",
+            "Authorization": "Bearer ...me4zI",
+            "user-agent": "node.js/v12.22.11",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 2,
+            "Content-Length": 1077
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"title\",\"name\":\"Post\",\"description\":\"\",\"fields\":[{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"introduction\",\"name\":\"Introduction\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"url\",\"name\":\"url\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"content\",\"name\":\"Content\",\"type\":\"RichText\",\"localized\":false,\"required\":false,\"validations\":[{\"enabledMarks\":[\"bold\",\"italic\",\"underline\",\"code\"],\"message\":\"Only bold, italic, underline, and code marks are allowed\"},{\"enabledNodeTypes\":[\"heading-2\",\"heading-3\",\"heading-4\",\"heading-5\",\"heading-6\",\"ordered-list\",\"unordered-list\",\"hr\",\"blockquote\",\"entry-hyperlink\",\"hyperlink\"],\"message\":\"Only heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, link to entry, and link to Url nodes are allowed\"},{\"nodes\":{}}],\"disabled\":false,\"omitted\":false}]}"
+        },
+        "requestId": "ffa903cb-7349-4025-9e04-b5f1c96b814f"
+      }
+    }
+  },
+  {
+    "ts": "2022-04-20T23:28:58.734Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "6P39VinsfZ1qr5Tz7WgFFG",
+            "type": "Entry",
+            "createdAt": "2021-12-17T16:28:39.496Z",
+            "updatedAt": "2021-12-17T16:29:53.796Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "publishedAt": "2021-12-17T16:29:53.796Z",
+            "firstPublishedAt": "2021-12-17T16:28:57.709Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 2,
+            "version": 6,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Tim Cook"
+            },
+            "introduction": {
+              "en-US": "Timothy Donald Cook is an American business executive and industrial engineer"
+            },
+            "url": {
+              "en-US": "tim-cook"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Timothy Donald Cook",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " is an American business executive and industrial engineer. Cook is the chief executive officer of Apple Inc., and previously served as the company's chief operating officer under its cofounder Steve Jobs.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook joined Apple in March 1998 as a senior vice president for worldwide operations, and then served as the executive vice president for worldwide sales and operations. He was made the chief executive on August 24, 2011, prior to Jobs' death in October of that year.\n During his tenure as the chief executive, he has advocated for the \npolitical reformation of international and domestic surveillance, cybersecurity, corporate taxation, American manufacturing, and environmental preservation.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "In 2014, Cook became the first chief executive of a Fortune 500 company to publicly come out as gay. Cook also serves on the boards of directors of Nike, Inc., the National Football Foundation, and is a trustee of Duke University. In March 2015, he said he planned to donate his entire stock fortune to charity.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook was born in Mobile, Alabama, United States. He was baptized in a Baptist church and grew up in nearby Robertsdale. His father, Donald, was a shipyard worker, and his mother, Geraldine, worked at a pharmacy.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook graduated from Robertsdale High School. He earned a Bachelor of Science (B.S.) in industrial engineering from Auburn University in 1982, and his Master of Business Administration (MBA) from Duke University's Fuqua School of Business in 1988.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "6P39VinsfZ1qr5Tz7WgFFG",
+            "type": "Entry",
+            "createdAt": "2021-12-17T16:28:39.496Z",
+            "updatedAt": "2021-12-17T16:29:53.796Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "publishedAt": "2021-12-17T16:29:53.796Z",
+            "firstPublishedAt": "2021-12-17T16:28:57.709Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 2,
+            "version": 6,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Tim Cook"
+            },
+            "introduction": {
+              "en-US": "Timothy Donald Cook is an American business executive and industrial engineer"
+            },
+            "url": {
+              "en-US": "tim-cook"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Timothy Donald Cook",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " is an American business executive and industrial engineer. Cook is the chief executive officer of Apple Inc., and previously served as the company's chief operating officer under its cofounder Steve Jobs.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook joined Apple in March 1998 as a senior vice president for worldwide operations, and then served as the executive vice president for worldwide sales and operations. He was made the chief executive on August 24, 2011, prior to Jobs' death in October of that year.\n During his tenure as the chief executive, he has advocated for the \npolitical reformation of international and domestic surveillance, cybersecurity, corporate taxation, American manufacturing, and environmental preservation.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "In 2014, Cook became the first chief executive of a Fortune 500 company to publicly come out as gay. Cook also serves on the boards of directors of Nike, Inc., the National Football Foundation, and is a trustee of Duke University. In March 2015, he said he planned to donate his entire stock fortune to charity.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook was born in Mobile, Alabama, United States. He was baptized in a Baptist church and grew up in nearby Robertsdale. His father, Donald, was a shipyard worker, and his mother, Geraldine, worked at a pharmacy.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cook graduated from Robertsdale High School. He earned a Bachelor of Science (B.S.) in industrial engineering from Auburn University in 1982, and his Master of Business Administration (MBA) from Duke University's Fuqua School of Business in 1988.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"title\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "title"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/15ctfdvfuqwf/environments/master/entries/6P39VinsfZ1qr5Tz7WgFFG",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v12.22.11; os Windows/v12.22.11;",
+            "CF-Sequence": "aeea435d-d01d-4cb4-b7fa-ed3801ca608d",
+            "Authorization": "Bearer ...me4zI",
+            "user-agent": "node.js/v12.22.11",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "post",
+            "Content-Length": 2310
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Tim Cook\"},\"introduction\":{\"en-US\":\"Timothy Donald Cook is an American business executive and industrial engineer\"},\"url\":{\"en-US\":\"tim-cook\"},\"content\":{\"en-US\":{\"nodeType\":\"document\",\"data\":{},\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Timothy Donald Cook\",\"marks\":[{\"type\":\"bold\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\" is an American business executive and industrial engineer. Cook is the chief executive officer of Apple Inc., and previously served as the company's chief operating officer under its cofounder Steve Jobs.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Cook joined Apple in March 1998 as a senior vice president for worldwide operations, and then served as the executive vice president for worldwide sales and operations. He was made the chief executive on August 24, 2011, prior to Jobs' death in October of that year.\\n During his tenure as the chief executive, he has advocated for the \\npolitical reformation of international and domestic surveillance, cybersecurity, corporate taxation, American manufacturing, and environmental preservation.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"In 2014, Cook became the first chief executive of a Fortune 500 company to publicly come out as gay. Cook also serves on the boards of directors of Nike, Inc., the National Football Foundation, and is a trustee of Duke University. In March 2015, he said he planned to donate his entire stock fortune to charity.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Cook was born in Mobile, Alabama, United States. He was baptized in a Baptist church and grew up in nearby Robertsdale. His father, Donald, was a shipyard worker, and his mother, Geraldine, worked at a pharmacy.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Cook graduated from Robertsdale High School. He earned a Bachelor of Science (B.S.) in industrial engineering from Auburn University in 1982, and his Master of Business Administration (MBA) from Duke University's Fuqua School of Business in 1988.\",\"marks\":[],\"data\":{}}],\"data\":{}}]}}}}"
+        },
+        "requestId": "3a3ece00-9bdc-48eb-89bc-73a618f1cde3"
+      }
+    }
+  },
+  {
+    "ts": "2022-04-20T23:28:58.743Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "4eNu30YvePCBrO515XKnSb",
+            "type": "Entry",
+            "createdAt": "2021-12-17T15:29:56.294Z",
+            "updatedAt": "2021-12-17T15:32:12.022Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 9,
+            "publishedAt": "2021-12-17T15:32:12.022Z",
+            "firstPublishedAt": "2021-12-17T15:32:12.022Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 1,
+            "version": 10,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Jony Ive"
+            },
+            "introduction": {
+              "en-US": "A British-American industrial and product designer. Ive was Chief Design Officer (CDO) of Apple Inc., and serves as Chancellor of the Royal College of Art"
+            },
+            "url": {
+              "en-US": "jony-ive"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "He joined Apple in September 1992, and was promoted to Senior Vice President of Industrial Design in the late 1990s after the return of co-founder ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Steve Jobs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Steve_Jobs"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " to the company, and CDO in 2015. He left the company in July 2019. Working closely with Jobs during their tenure together at Apple, Ive played a vital role in the designs of the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iMac",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IMac"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Power Mac G4 Cube",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Power_Mac_G4_Cube"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPod",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPod"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPhone",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPhone"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPad",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPad"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "MacBook",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/MacBook"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", and parts of the user interface of Apple's mobile ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "operating system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Operating_system"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iOS",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IOS"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", among other products. He also helped design Apple's major architectural projects, such as ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Apple Park",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Apple_Park"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Apple Stores",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Apple_Stores"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Born in ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "London",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/London"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", Ive lived there until his family moved to ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Stafford",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Stafford"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " when he was 12. He studied design at ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Newcastle Polytechnic",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Northumbria_University"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ",",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-2"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and was later hired by the London-based start-up design firm Tangerine.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-3"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " He began working at Apple in the early 1990s, designing the decade's ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "PowerBooks",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/PowerBook"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Macs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Macintosh"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", finally taking up US citizenship in 2012 to become a dual British-American national.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-4"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " He was invited to join the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Royal College of Art",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_College_of_Art"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " in May 2017 as its head-of-college, serving a fixed five-year term until May 2022.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Ive has received ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "a number of accolades and honours",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Jony_Ive"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " for his designs and patents. In the United Kingdom, he has been appointed a ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Royal Designer for Industry",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_Designers_for_Industry"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (RDI), an ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Honorary Fellow of the Royal Academy of Engineering",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_Academy_of_Engineering"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (HonFREng), and a ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Knight Commander of the Order of the British Empire",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Knight_Commander_of_the_Order_of_the_British_Empire"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (KBE). In 2018, he was awarded the Professor Hawking Fellowship of the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Cambridge Union Society",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Cambridge_Union_Society"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-5"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " In a 2004 ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "BBC",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/BBC"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " poll of cultural writers, Ive was ranked the most influential person in ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "British culture",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Culture_of_the_United_Kingdom"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-6"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " His designs have been described as integral to the successes of Apple, which has gone on to become the world's largest information technology company by revenue and the largest company in the world by market capitalization.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "On 27 June 2019, in an exclusive interview with the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Financial Times",
+                            "marks": [
+                              {
+                                "type": "italic"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Financial_Times"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", Ive announced he would leave Apple after 27 years to start his own design firm, LoveFrom, together with industrial designer ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Marc Newson",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Marc_Newson"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ". He has been recruited by the wealthy Agnelli family to work on Ferrari vehicles, starting in 2021.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "\n\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "4eNu30YvePCBrO515XKnSb",
+            "type": "Entry",
+            "createdAt": "2021-12-17T15:29:56.294Z",
+            "updatedAt": "2021-12-17T15:32:12.022Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 9,
+            "publishedAt": "2021-12-17T15:32:12.022Z",
+            "firstPublishedAt": "2021-12-17T15:32:12.022Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 1,
+            "version": 10,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Jony Ive"
+            },
+            "introduction": {
+              "en-US": "A British-American industrial and product designer. Ive was Chief Design Officer (CDO) of Apple Inc., and serves as Chancellor of the Royal College of Art"
+            },
+            "url": {
+              "en-US": "jony-ive"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "He joined Apple in September 1992, and was promoted to Senior Vice President of Industrial Design in the late 1990s after the return of co-founder ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Steve Jobs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Steve_Jobs"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " to the company, and CDO in 2015. He left the company in July 2019. Working closely with Jobs during their tenure together at Apple, Ive played a vital role in the designs of the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iMac",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IMac"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Power Mac G4 Cube",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Power_Mac_G4_Cube"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPod",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPod"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPhone",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPhone"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iPad",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IPad"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "MacBook",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/MacBook"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", and parts of the user interface of Apple's mobile ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "operating system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Operating_system"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "iOS",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/IOS"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", among other products. He also helped design Apple's major architectural projects, such as ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Apple Park",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Apple_Park"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Apple Stores",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Apple_Stores"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Born in ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "London",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/London"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", Ive lived there until his family moved to ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Stafford",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Stafford"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " when he was 12. He studied design at ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Newcastle Polytechnic",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Northumbria_University"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ",",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-2"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and was later hired by the London-based start-up design firm Tangerine.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-3"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " He began working at Apple in the early 1990s, designing the decade's ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "PowerBooks",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/PowerBook"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " and ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Macs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Macintosh"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", finally taking up US citizenship in 2012 to become a dual British-American national.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-4"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " He was invited to join the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Royal College of Art",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_College_of_Art"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " in May 2017 as its head-of-college, serving a fixed five-year term until May 2022.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Ive has received ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "a number of accolades and honours",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Jony_Ive"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " for his designs and patents. In the United Kingdom, he has been appointed a ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Royal Designer for Industry",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_Designers_for_Industry"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (RDI), an ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Honorary Fellow of the Royal Academy of Engineering",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Royal_Academy_of_Engineering"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (HonFREng), and a ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Knight Commander of the Order of the British Empire",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Knight_Commander_of_the_Order_of_the_British_Empire"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (KBE). In 2018, he was awarded the Professor Hawking Fellowship of the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Cambridge Union Society",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Cambridge_Union_Society"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-5"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " In a 2004 ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "BBC",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/BBC"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " poll of cultural writers, Ive was ranked the most influential person in ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "British culture",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Culture_of_the_United_Kingdom"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ".",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Jony_Ive#cite_note-6"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " His designs have been described as integral to the successes of Apple, which has gone on to become the world's largest information technology company by revenue and the largest company in the world by market capitalization.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "On 27 June 2019, in an exclusive interview with the ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Financial Times",
+                            "marks": [
+                              {
+                                "type": "italic"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Financial_Times"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", Ive announced he would leave Apple after 27 years to start his own design firm, LoveFrom, together with industrial designer ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Marc Newson",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://en.wikipedia.org/wiki/Marc_Newson"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ". He has been recruited by the wealthy Agnelli family to work on Ferrari vehicles, starting in 2021.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "\n\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"title\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "title"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/15ctfdvfuqwf/environments/master/entries/4eNu30YvePCBrO515XKnSb",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v12.22.11; os Windows/v12.22.11;",
+            "CF-Sequence": "aeea435d-d01d-4cb4-b7fa-ed3801ca608d",
+            "Authorization": "Bearer ...me4zI",
+            "user-agent": "node.js/v12.22.11",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "post",
+            "Content-Length": 9358
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Jony Ive\"},\"introduction\":{\"en-US\":\"A British-American industrial and product designer. Ive was Chief Design Officer (CDO) of Apple Inc., and serves as Chancellor of the Royal College of Art\"},\"url\":{\"en-US\":\"jony-ive\"},\"content\":{\"en-US\":{\"nodeType\":\"document\",\"data\":{},\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"He joined Apple in September 1992, and was promoted to Senior Vice President of Industrial Design in the late 1990s after the return of co-founder \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Steve Jobs\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Steve_Jobs\"}},{\"nodeType\":\"text\",\"value\":\" to the company, and CDO in 2015. He left the company in July 2019. Working closely with Jobs during their tenure together at Apple, Ive played a vital role in the designs of the \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"iMac\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/IMac\"}},{\"nodeType\":\"text\",\"value\":\", \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Power Mac G4 Cube\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Power_Mac_G4_Cube\"}},{\"nodeType\":\"text\",\"value\":\", \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"iPod\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/IPod\"}},{\"nodeType\":\"text\",\"value\":\", \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"iPhone\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/IPhone\"}},{\"nodeType\":\"text\",\"value\":\", \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"iPad\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/IPad\"}},{\"nodeType\":\"text\",\"value\":\", \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"MacBook\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/MacBook\"}},{\"nodeType\":\"text\",\"value\":\", and parts of the user interface of Apple's mobile \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"operating system\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Operating_system\"}},{\"nodeType\":\"text\",\"value\":\" \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"iOS\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/IOS\"}},{\"nodeType\":\"text\",\"value\":\", among other products. He also helped design Apple's major architectural projects, such as \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Apple Park\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Apple_Park\"}},{\"nodeType\":\"text\",\"value\":\" and \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Apple Stores\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Apple_Stores\"}},{\"nodeType\":\"text\",\"value\":\".\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Born in \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"London\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/London\"}},{\"nodeType\":\"text\",\"value\":\", Ive lived there until his family moved to \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Stafford\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Stafford\"}},{\"nodeType\":\"text\",\"value\":\" when he was 12. He studied design at \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Newcastle Polytechnic\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Northumbria_University\"}},{\"nodeType\":\"text\",\"value\":\",\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Jony_Ive#cite_note-2\"}},{\"nodeType\":\"text\",\"value\":\" and was later hired by the London-based start-up design firm Tangerine.\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Jony_Ive#cite_note-3\"}},{\"nodeType\":\"text\",\"value\":\" He began working at Apple in the early 1990s, designing the decade's \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"PowerBooks\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/PowerBook\"}},{\"nodeType\":\"text\",\"value\":\" and \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Macs\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Macintosh\"}},{\"nodeType\":\"text\",\"value\":\", finally taking up US citizenship in 2012 to become a dual British-American national.\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Jony_Ive#cite_note-4\"}},{\"nodeType\":\"text\",\"value\":\" He was invited to join the \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Royal College of Art\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Royal_College_of_Art\"}},{\"nodeType\":\"text\",\"value\":\" in May 2017 as its head-of-college, serving a fixed five-year term until May 2022.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Ive has received \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"a number of accolades and honours\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Jony_Ive\"}},{\"nodeType\":\"text\",\"value\":\" for his designs and patents. In the United Kingdom, he has been appointed a \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Royal Designer for Industry\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Royal_Designers_for_Industry\"}},{\"nodeType\":\"text\",\"value\":\" (RDI), an \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Honorary Fellow of the Royal Academy of Engineering\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Royal_Academy_of_Engineering\"}},{\"nodeType\":\"text\",\"value\":\" (HonFREng), and a \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Knight Commander of the Order of the British Empire\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Knight_Commander_of_the_Order_of_the_British_Empire\"}},{\"nodeType\":\"text\",\"value\":\" (KBE). In 2018, he was awarded the Professor Hawking Fellowship of the \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Cambridge Union Society\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Cambridge_Union_Society\"}},{\"nodeType\":\"text\",\"value\":\".\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Jony_Ive#cite_note-5\"}},{\"nodeType\":\"text\",\"value\":\" In a 2004 \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"BBC\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/BBC\"}},{\"nodeType\":\"text\",\"value\":\" poll of cultural writers, Ive was ranked the most influential person in \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"British culture\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Culture_of_the_United_Kingdom\"}},{\"nodeType\":\"text\",\"value\":\".\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Jony_Ive#cite_note-6\"}},{\"nodeType\":\"text\",\"value\":\" His designs have been described as integral to the successes of Apple, which has gone on to become the world's largest information technology company by revenue and the largest company in the world by market capitalization.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"On 27 June 2019, in an exclusive interview with the \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Financial Times\",\"marks\":[{\"type\":\"italic\"}],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Financial_Times\"}},{\"nodeType\":\"text\",\"value\":\", Ive announced he would leave Apple after 27 years to start his own design firm, LoveFrom, together with industrial designer \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Marc Newson\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://en.wikipedia.org/wiki/Marc_Newson\"}},{\"nodeType\":\"text\",\"value\":\". He has been recruited by the wealthy Agnelli family to work on Ferrari vehicles, starting in 2021.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\\n\\n\",\"marks\":[],\"data\":{}}],\"data\":{}}]}}}}"
+        },
+        "requestId": "4bb78311-00f9-466f-b12c-734458c0453f"
+      }
+    }
+  },
+  {
+    "ts": "2022-04-20T23:28:58.750Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "652iDc1YzxyvxEaQWTJnxw",
+            "type": "Entry",
+            "createdAt": "2021-12-19T14:11:11.049Z",
+            "updatedAt": "2021-12-19T14:39:24.402Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 32,
+            "publishedAt": "2021-12-19T14:39:24.402Z",
+            "firstPublishedAt": "2021-12-19T14:13:49.669Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 4,
+            "version": 33,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Toolkit"
+            },
+            "introduction": {
+              "en-US": "Some of the basic content styles you will find with Barcadia"
+            },
+            "url": {
+              "en-US": "toolkit"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "heading-2",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 1",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-2",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 2",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-3",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 3",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-4",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 4",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-5",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 5",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-6",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 6",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim neque eros, et dictum enim facilisis eu. Duis vestibulum ante nulla, a dignissim ante mattis sit amet. Mauris maximus tincidunt tellus at pellentesque. Suspendisse a sapien dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor tincidunt lorem, quis pharetra lacus laoreet at. Pellentesque mauris lorem, mollis vitae venenatis eget, eleifend sit amet orci.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Etiam sit amet lectus",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " bibendum, hendrerit mi vitae, luctus turpis. Fusce lorem purus, mattis vitae ornare id, elementum non libero. Vivamus nec nulla nec leo aliquam venenatis. Suspendisse potenti. Suspendisse imperdiet nisl non nisi mattis blandit. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Nulla sagittis",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " tristique nulla, sit amet consectetur quam aliquet vitae. Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada. Nullam mauris nunc, varius nec purus non, ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "viverra posuere nisi",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ". Suspendisse sed dui tristique, pretium augue in, tincidunt justo. Sed varius nisi vel neque tempor, non posuere libero tristique. Nullam placerat, neque at auctor malesuada, velit orci laoreet tortor, eu molestie dui tortor vel erat. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Praesent scelerisque",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://www.morganbaker.dev"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", est nec viverra convallis, justo sem faucibus nisi, quis sollicitudin velit ligula ultricies nulla. Praesent dignissim consequat odio, ut commodo lorem malesuada vitae.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "blockquote",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Donec leo erat, rutrum in purus eu, vehicula vestibulum leo. Praesent sagittis cursus velit, ut porttitor eros fringilla vitae. Praesent eget est libero. Pellentesque viverra aliquet nibh, ac vestibulum quam tempor quis. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hr",
+                    "content": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Donec mollis felis et tempus posuere. Aliquam nec nisl venenatis, commodo ligula eu, egestas augue. Pellentesque at tortor sodales, iaculis magna egestas, sollicitudin lacus. Duis et venenatis orci. Curabitur quis tellus maximus sapien hendrerit tempor. Praesent eu suscipit erat. Duis sed viverra arcu, eget cursus ipsum. Suspendisse et quam nibh. Praesent risus elit, blandit lacinia elementum quis, volutpat interdum mi. Integer pretium pulvinar interdum.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "unordered-list",
+                    "content": [
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Praesent dignissim consequat odio",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Praesent sagittis",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Sed varius nisi",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "ordered-list",
+                    "content": [
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Aliquam nec nisl venenatis",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Suspendisse et quam",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Sed varius nisi vel",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "\n\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "652iDc1YzxyvxEaQWTJnxw",
+            "type": "Entry",
+            "createdAt": "2021-12-19T14:11:11.049Z",
+            "updatedAt": "2021-12-19T14:39:24.402Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 32,
+            "publishedAt": "2021-12-19T14:39:24.402Z",
+            "firstPublishedAt": "2021-12-19T14:13:49.669Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 4,
+            "version": 33,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Toolkit"
+            },
+            "introduction": {
+              "en-US": "Some of the basic content styles you will find with Barcadia"
+            },
+            "url": {
+              "en-US": "toolkit"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "heading-2",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 1",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-2",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 2",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-3",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 3",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-4",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 4",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-5",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 5",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "heading-6",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Heading 6",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim neque eros, et dictum enim facilisis eu. Duis vestibulum ante nulla, a dignissim ante mattis sit amet. Mauris maximus tincidunt tellus at pellentesque. Suspendisse a sapien dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor tincidunt lorem, quis pharetra lacus laoreet at. Pellentesque mauris lorem, mollis vitae venenatis eget, eleifend sit amet orci.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Etiam sit amet lectus",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " bibendum, hendrerit mi vitae, luctus turpis. Fusce lorem purus, mattis vitae ornare id, elementum non libero. Vivamus nec nulla nec leo aliquam venenatis. Suspendisse potenti. Suspendisse imperdiet nisl non nisi mattis blandit. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Nulla sagittis",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " tristique nulla, sit amet consectetur quam aliquet vitae. Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada. Nullam mauris nunc, varius nec purus non, ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "viverra posuere nisi",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ". Suspendisse sed dui tristique, pretium augue in, tincidunt justo. Sed varius nisi vel neque tempor, non posuere libero tristique. Nullam placerat, neque at auctor malesuada, velit orci laoreet tortor, eu molestie dui tortor vel erat. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Praesent scelerisque",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "https://www.morganbaker.dev"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", est nec viverra convallis, justo sem faucibus nisi, quis sollicitudin velit ligula ultricies nulla. Praesent dignissim consequat odio, ut commodo lorem malesuada vitae.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "blockquote",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Donec leo erat, rutrum in purus eu, vehicula vestibulum leo. Praesent sagittis cursus velit, ut porttitor eros fringilla vitae. Praesent eget est libero. Pellentesque viverra aliquet nibh, ac vestibulum quam tempor quis. ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hr",
+                    "content": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Donec mollis felis et tempus posuere. Aliquam nec nisl venenatis, commodo ligula eu, egestas augue. Pellentesque at tortor sodales, iaculis magna egestas, sollicitudin lacus. Duis et venenatis orci. Curabitur quis tellus maximus sapien hendrerit tempor. Praesent eu suscipit erat. Duis sed viverra arcu, eget cursus ipsum. Suspendisse et quam nibh. Praesent risus elit, blandit lacinia elementum quis, volutpat interdum mi. Integer pretium pulvinar interdum.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "unordered-list",
+                    "content": [
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Praesent dignissim consequat odio",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Praesent sagittis",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Sed varius nisi",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "ordered-list",
+                    "content": [
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Aliquam nec nisl venenatis",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Suspendisse et quam",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "list-item",
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Sed varius nisi vel",
+                                "marks": [
+                                ],
+                                "data": {
+                                }
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "\n\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"title\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "title"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/15ctfdvfuqwf/environments/master/entries/652iDc1YzxyvxEaQWTJnxw",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v12.22.11; os Windows/v12.22.11;",
+            "CF-Sequence": "aeea435d-d01d-4cb4-b7fa-ed3801ca608d",
+            "Authorization": "Bearer ...me4zI",
+            "user-agent": "node.js/v12.22.11",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "post",
+            "Content-Length": 5393
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Toolkit\"},\"introduction\":{\"en-US\":\"Some of the basic content styles you will find with Barcadia\"},\"url\":{\"en-US\":\"toolkit\"},\"content\":{\"en-US\":{\"nodeType\":\"document\",\"data\":{},\"content\":[{\"nodeType\":\"heading-2\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 1\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"heading-2\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 2\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"heading-3\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 3\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"heading-4\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 4\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"heading-5\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 5\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"heading-6\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Heading 6\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim neque eros, et dictum enim facilisis eu. Duis vestibulum ante nulla, a dignissim ante mattis sit amet. Mauris maximus tincidunt tellus at pellentesque. Suspendisse a sapien dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor tincidunt lorem, quis pharetra lacus laoreet at. Pellentesque mauris lorem, mollis vitae venenatis eget, eleifend sit amet orci.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Etiam sit amet lectus\",\"marks\":[{\"type\":\"bold\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\" bibendum, hendrerit mi vitae, luctus turpis. Fusce lorem purus, mattis vitae ornare id, elementum non libero. Vivamus nec nulla nec leo aliquam venenatis. Suspendisse potenti. Suspendisse imperdiet nisl non nisi mattis blandit. \",\"marks\":[],\"data\":{}},{\"nodeType\":\"text\",\"value\":\"Nulla sagittis\",\"marks\":[{\"type\":\"italic\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\" tristique nulla, sit amet consectetur quam aliquet vitae. Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada. Nullam mauris nunc, varius nec purus non, \",\"marks\":[],\"data\":{}},{\"nodeType\":\"text\",\"value\":\"viverra posuere nisi\",\"marks\":[{\"type\":\"underline\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\". Suspendisse sed dui tristique, pretium augue in, tincidunt justo. Sed varius nisi vel neque tempor, non posuere libero tristique. Nullam placerat, neque at auctor malesuada, velit orci laoreet tortor, eu molestie dui tortor vel erat. \",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Praesent scelerisque\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"https://www.morganbaker.dev\"}},{\"nodeType\":\"text\",\"value\":\", est nec viverra convallis, justo sem faucibus nisi, quis sollicitudin velit ligula ultricies nulla. Praesent dignissim consequat odio, ut commodo lorem malesuada vitae.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"blockquote\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Praesent egestas molestie nisi nec ornare. Quisque venenatis felis quis magna cursus, nec vehicula augue malesuada.\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Donec leo erat, rutrum in purus eu, vehicula vestibulum leo. Praesent sagittis cursus velit, ut porttitor eros fringilla vitae. Praesent eget est libero. Pellentesque viverra aliquet nibh, ac vestibulum quam tempor quis. \",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"hr\",\"content\":[],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Donec mollis felis et tempus posuere. Aliquam nec nisl venenatis, commodo ligula eu, egestas augue. Pellentesque at tortor sodales, iaculis magna egestas, sollicitudin lacus. Duis et venenatis orci. Curabitur quis tellus maximus sapien hendrerit tempor. Praesent eu suscipit erat. Duis sed viverra arcu, eget cursus ipsum. Suspendisse et quam nibh. Praesent risus elit, blandit lacinia elementum quis, volutpat interdum mi. Integer pretium pulvinar interdum.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"unordered-list\",\"content\":[{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Praesent dignissim consequat odio\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Praesent sagittis\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Sed varius nisi\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"ordered-list\",\"content\":[{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Aliquam nec nisl venenatis\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Suspendisse et quam\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"list-item\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Sed varius nisi vel\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"\\n\\n\",\"marks\":[],\"data\":{}}],\"data\":{}}]}}}}"
+        },
+        "requestId": "97c407d1-ef21-4b25-a93e-1b77ab450efc"
+      }
+    }
+  },
+  {
+    "ts": "2022-04-20T23:28:58.792Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "1yAGAyf5pmCgdeqBmSFrOE",
+            "type": "Entry",
+            "createdAt": "2021-12-18T14:42:40.233Z",
+            "updatedAt": "2021-12-18T14:43:17.094Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "publishedAt": "2021-12-18T14:43:17.094Z",
+            "firstPublishedAt": "2021-12-18T14:43:17.094Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 1,
+            "version": 6,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Steve Jobs"
+            },
+            "introduction": {
+              "en-US": "Steven Paul Jobs was an American business magnate, industrial designer, investor, and media proprietor"
+            },
+            "url": {
+              "en-US": "steve-jobs"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Steven Paul Jobs",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " Apple Inc.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "www.apple.com"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", the chairman and majority shareholder of ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Pixar",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", a member of The Walt Disney Company's board of directors following its acquisition of Pixar, and the founder, chairman, and CEO of NeXT. Jobs is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with Apple co-founder Steve Wozniak.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "blockquote",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "taking LSD was \"one of the two or three most important things\" he had done in his life",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Jobs was born in San Francisco, California, and put up for adoption. He was raised in the San Francisco Bay Area. He attended Reed College in 1972 before dropping out that same year, and traveled through India in 1974 seeking enlightenment and studying Zen Buddhism. His declassified FBI report states that he used marijuana and LSD while he was in college, and once told a reporter that taking LSD was \"one of the two or three most important things\" he had done in his life.\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Jobs and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics. Jobs was forced out of Apple in 1985 after a long power struggle with the company's board and its then-CEO John Sculley. That same year, Jobs took a few of Apple's members with him to found NeXT, a computer platform development company that specialized in computers for higher-education and business markets. In addition, he helped to develop the visual effects industry when he funded the computer graphics division of George Lucas's Lucasfilm in 1986. The new company was Pixar, which produced the first 3D computer animated film ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Toy Story",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (1995).",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "jou8fvkfe5pw"
+              }
+            },
+            "id": "1yAGAyf5pmCgdeqBmSFrOE",
+            "type": "Entry",
+            "createdAt": "2021-12-18T14:42:40.233Z",
+            "updatedAt": "2021-12-18T14:43:17.094Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "publishedAt": "2021-12-18T14:43:17.094Z",
+            "firstPublishedAt": "2021-12-18T14:43:17.094Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "publishedCounter": 1,
+            "version": 6,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "1ZkS53idWXmyWeA3nvkU95"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "post"
+              }
+            }
+          },
+          "fields": {
+            "title": {
+              "en-US": "Steve Jobs"
+            },
+            "introduction": {
+              "en-US": "Steven Paul Jobs was an American business magnate, industrial designer, investor, and media proprietor"
+            },
+            "url": {
+              "en-US": "steve-jobs"
+            },
+            "content": {
+              "en-US": {
+                "nodeType": "document",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Steven Paul Jobs",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "hyperlink",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " Apple Inc.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                          "uri": "www.apple.com"
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", the chairman and majority shareholder of ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Pixar",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": ", a member of The Walt Disney Company's board of directors following its acquisition of Pixar, and the founder, chairman, and CEO of NeXT. Jobs is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with Apple co-founder Steve Wozniak.",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "blockquote",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "taking LSD was \"one of the two or three most important things\" he had done in his life",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Jobs was born in San Francisco, California, and put up for adoption. He was raised in the San Francisco Bay Area. He attended Reed College in 1972 before dropping out that same year, and traveled through India in 1974 seeking enlightenment and studying Zen Buddhism. His declassified FBI report states that he used marijuana and LSD while he was in college, and once told a reporter that taking LSD was \"one of the two or three most important things\" he had done in his life.\n",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Jobs and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics. Jobs was forced out of Apple in 1985 after a long power struggle with the company's board and its then-CEO John Sculley. That same year, Jobs took a few of Apple's members with him to found NeXT, a computer platform development company that specialized in computers for higher-education and business markets. In addition, he helped to develop the visual effects industry when he funded the computer graphics division of George Lucas's Lucasfilm in 1986. The new company was Pixar, which produced the first 3D computer animated film ",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "Toy Story",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": " (1995).",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"title\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "title"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/15ctfdvfuqwf/environments/master/entries/1yAGAyf5pmCgdeqBmSFrOE",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v12.22.11; os Windows/v12.22.11;",
+            "CF-Sequence": "aeea435d-d01d-4cb4-b7fa-ed3801ca608d",
+            "Authorization": "Bearer ...me4zI",
+            "user-agent": "node.js/v12.22.11",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "post",
+            "Content-Length": 3516
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"title\":{\"en-US\":\"Steve Jobs\"},\"introduction\":{\"en-US\":\"Steven Paul Jobs was an American business magnate, industrial designer, investor, and media proprietor\"},\"url\":{\"en-US\":\"steve-jobs\"},\"content\":{\"en-US\":{\"nodeType\":\"document\",\"data\":{},\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Steven Paul Jobs\",\"marks\":[{\"type\":\"bold\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\" was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of\",\"marks\":[],\"data\":{}},{\"nodeType\":\"hyperlink\",\"content\":[{\"nodeType\":\"text\",\"value\":\" Apple Inc.\",\"marks\":[],\"data\":{}}],\"data\":{\"uri\":\"www.apple.com\"}},{\"nodeType\":\"text\",\"value\":\", the chairman and majority shareholder of \",\"marks\":[],\"data\":{}},{\"nodeType\":\"text\",\"value\":\"Pixar\",\"marks\":[{\"type\":\"italic\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\", a member of The Walt Disney Company's board of directors following its acquisition of Pixar, and the founder, chairman, and CEO of NeXT. Jobs is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with Apple co-founder Steve Wozniak.\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"blockquote\",\"content\":[{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"taking LSD was \\\"one of the two or three most important things\\\" he had done in his life\",\"marks\":[],\"data\":{}}],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Jobs was born in San Francisco, California, and put up for adoption. He was raised in the San Francisco Bay Area. He attended Reed College in 1972 before dropping out that same year, and traveled through India in 1974 seeking enlightenment and studying Zen Buddhism. His declassified FBI report states that he used marijuana and LSD while he was in college, and once told a reporter that taking LSD was \\\"one of the two or three most important things\\\" he had done in his life.\\n\",\"marks\":[],\"data\":{}}],\"data\":{}},{\"nodeType\":\"paragraph\",\"content\":[{\"nodeType\":\"text\",\"value\":\"Jobs and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics. Jobs was forced out of Apple in 1985 after a long power struggle with the company's board and its then-CEO John Sculley. That same year, Jobs took a few of Apple's members with him to found NeXT, a computer platform development company that specialized in computers for higher-education and business markets. In addition, he helped to develop the visual effects industry when he funded the computer graphics division of George Lucas's Lucasfilm in 1986. The new company was Pixar, which produced the first 3D computer animated film \",\"marks\":[],\"data\":{}},{\"nodeType\":\"text\",\"value\":\"Toy Story\",\"marks\":[{\"type\":\"italic\"}],\"data\":{}},{\"nodeType\":\"text\",\"value\":\" (1995).\",\"marks\":[],\"data\":{}}],\"data\":{}}]}}}}"
+        },
+        "requestId": "1a47f18a-ca2d-4d82-adb3-e2aaec633411"
+      }
+    }
+  }
+]
